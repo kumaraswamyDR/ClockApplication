@@ -11,12 +11,18 @@
 
 @interface ViewController ()
 @property(nonatomic,strong) ClockView *clockView;
+@property(nonatomic,strong) UIImageView *backGroundImageView;
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
+    _backGroundImageView = [[UIImageView alloc]init];
+    _backGroundImageView.image = [UIImage imageNamed:@"clockbackground.jpg"];
+    [self.view addSubview:_backGroundImageView];
+    
     _clockView = [[ClockView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width*0.8, self.view.frame.size.width*0.8)];
     [self.view addSubview:_clockView];
     
@@ -24,7 +30,9 @@
 }
 -(void)viewWillLayoutSubviews
 {
+     _backGroundImageView.frame = self.view.frame;
     _clockView.frame = CGRectMake(self.view.frame.size.width*0.1, self.view.frame.size.width*0.2, self.view.frame.size.width*0.8, self.view.frame.size.height*0.6);
+   
    
     
 }

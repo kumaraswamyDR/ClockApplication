@@ -18,6 +18,7 @@
 		ECB102B31D47C576008B608F /* clock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECB102B21D47C576008B608F /* clock.jpg */; };
 		ECB102B51D47DF18008B608F /* clock-sec-background.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB102B41D47DF18008B608F /* clock-sec-background.png */; };
 		ECB102B71D488141008B608F /* clock-background.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB102B61D488141008B608F /* clock-background.png */; };
+		ECD897801D48DDA700B72D74 /* clockbackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECD8977F1D48DDA700B72D74 /* clockbackground.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		ECB102B21D47C576008B608F /* clock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = clock.jpg; sourceTree = "<group>"; };
 		ECB102B41D47DF18008B608F /* clock-sec-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock-sec-background.png"; sourceTree = "<group>"; };
 		ECB102B61D488141008B608F /* clock-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock-background.png"; sourceTree = "<group>"; };
+		ECD8977F1D48DDA700B72D74 /* clockbackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = clockbackground.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				ECB102901D47BFD4008B608F /* ViewController.h */,
 				ECB102911D47BFD4008B608F /* ViewController.m */,
 				ECB102AF1D47C06A008B608F /* ClockView.h */,
+				ECD8977F1D48DDA700B72D74 /* clockbackground.jpg */,
 				ECB102B01D47C06A008B608F /* ClockView.m */,
 				ECB102B61D488141008B608F /* clock-background.png */,
 				ECB102B41D47DF18008B608F /* clock-sec-background.png */,
@@ -206,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECB102B71D488141008B608F /* clock-background.png in Resources */,
+				ECD897801D48DDA700B72D74 /* clockbackground.jpg in Resources */,
 				ECB102B31D47C576008B608F /* clock.jpg in Resources */,
 				ECB1029A1D47BFD4008B608F /* LaunchScreen.storyboard in Resources */,
 				ECB102971D47BFD4008B608F /* Assets.xcassets in Resources */,
@@ -418,6 +422,7 @@
 				ECB102AB1D47BFD4008B608F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECB102AC1D47BFD4008B608F /* Build configuration list for PBXNativeTarget "ClockApplicationUITests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +431,7 @@
 				ECB102AE1D47BFD4008B608F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
