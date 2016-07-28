@@ -50,9 +50,11 @@ float Degrees2Radians(float degrees) { return degrees * M_PI / 180; }
         
         _seccondsLineView = [[UIImageView alloc]initWithFrame:CGRectMake(self.frame.size.width/2, self.frame.size.width/2, 5, 60)];
         _seccondsLineView.center = CGPointMake(_backgroundImageView.center.x, _backgroundImageView.center.y);
+        
         _seccondsLineView.layer.anchorPoint = CGPointMake(0.5, 0);
         _seccondsLineView.image = [UIImage imageNamed:@"clock-sec-background.png"];
-        _seccondsLineView.backgroundColor = [UIColor blackColor];
+        _seccondsLineView.image = [_seccondsLineView.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+        [_seccondsLineView setTintColor:[UIColor redColor]];
         [self addSubview:_seccondsLineView];
         
         
@@ -60,6 +62,8 @@ float Degrees2Radians(float degrees) { return degrees * M_PI / 180; }
         _minuteLineView.center = CGPointMake(_backgroundImageView.center.x, _backgroundImageView.center.y);
         _minuteLineView.layer.anchorPoint = CGPointMake(0.5, 0);
         _minuteLineView.image = [UIImage imageNamed:@"clock-sec-background.png"];
+        _minuteLineView.image = [_seccondsLineView.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+        [_minuteLineView setTintColor:[UIColor greenColor]];
         _minuteLineView.backgroundColor = [UIColor blackColor];
         [self addSubview:_minuteLineView];
         
